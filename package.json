@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/anuradha9920/To_do_list/issues"
   },
-  "homepage": "https://github.com/anuradha9920/To_do_list#readme"
+  "homepage": "https://github.com/anuradha9920/To_do_list#readme",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "express.js": "^1.0.0",
+    "mongoose": "^5.10.0"
+  }
 }
