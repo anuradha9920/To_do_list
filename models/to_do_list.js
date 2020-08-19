@@ -9,7 +9,7 @@ const listSchema = new mongoose.Schema({
         type:String,
         required: true
     },
-    priorit:{
+    priority:{
         type:Number,
         required:true,
         default:6
