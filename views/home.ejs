@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>
+            <%=title%> 
+        </title>
+        <script src="https://kit.fontawesome.com/c5c0c2ae0d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+        <nav class="nav-bar">
+
+        </nav>
+        <form action="/add-item" method="POST" class="add-contact-form">
+            <fieldset>
+                <legend>add new to -do</legend>
+                <input type="text" name="label" placeholder="Enter Name..." required>
+                <input type="date"  name="dueDate" placeholder="enter date..." required
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+>
+                <select name="category">
+                    <option value="none">Select</option>
+                    <option value="personal">personal</option>
+                    <option value="office">office</option>
+                </select>
+                <select name="priority">
+                    <option value="6">default</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <button type="submit">
+                    ADD
+                </button>
+            </fieldset>
+        </form>
+        <!-- <div>
+            <ul>
+                <% for(let i of to_do_list) {%>
+                    <li>
+                        label : <%= i.label %>
+                        category : <%= i.category %>
+                        dueDate : <%= i.dueDate %>
+                    </li>
+                <% } %>   
+            </ul>
+        </div> -->
+        <div>
+            <form action="/delete_task" method="POST">
+                <% for(let i of to_do_list) {%>
+                    <input type="checkbox" name="taskDone" value="<%= i.id %>">
+                        label : <%= i.label %>
+                        category : <%= i.category %>
+                        dueDate : <%= i.dueDate %>
+                <% } %> 
+                    <button type="submit">submit</button>
+            </form>
+
+        </div>
+        <script type="text/javascript" src="/js/home.js">
+        </script>
+    </body>
+</html>
