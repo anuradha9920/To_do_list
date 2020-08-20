@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+//to do list schema
 const listSchema = new mongoose.Schema({
     label:{
         type:String,
@@ -15,7 +15,7 @@ const listSchema = new mongoose.Schema({
         default:6
     },
     dueDate:{
-        type:Date,
+        type:String,
         required:true
     }
 });
